@@ -1,0 +1,159 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+#app {
+  font-family: Courier, monospace;
+  font-size: calc(1vw + 1vh + 1vmin);
+  min-height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+canvas, .loader {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  z-index: -1;
+  pointer-events: none;
+  touch-action: none;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  z-index: 999;
+}
+
+ul.links {
+  display: grid;
+  width: 100%;
+}
+
+ul.links li {
+  position: relative;
+  display: inline-block;
+}
+
+ul.links li a {
+  position: absolute;
+  color: #0000ee;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+ul.links li:hover a {
+  z-index: 99 !important;
+}
+
+ul.links li:nth-child(1) {
+  grid-area: t1;
+}
+
+ul.links li:nth-child(2) {
+  grid-area: t2;
+}
+
+ul.links li:nth-child(3) {
+  grid-area: t3;
+}
+
+ul.links li:nth-child(4) {
+  grid-area: t4;
+}
+
+ul.links li:nth-child(5) {
+  grid-area: t5;
+}
+
+ul.links li:nth-child(6) {
+  grid-area: t6;
+}
+
+ul.links li:nth-child(7) {
+  grid-area: t7;
+}
+
+ul.links li:nth-child(8) {
+  grid-area: t8;
+}
+
+@media (orientation: portrait) {
+  ul.links {
+    grid-template-columns: repeat(12, 8.333%);
+    grid-template-rows: repeat(18, 2.5em);
+    grid-template-areas:
+      ". . . . . . . . . . . ."
+      ". . . . . . . t1 . . . ."
+      ". . . . . . . . . . . ."
+      ". t2 . . . . . . . . . ."
+      ". . . . . . . . . . . ."
+      ". . . . . t3 . . . . . ."
+      ". . . . . . . . . . . ."
+      ". . . . . . . . . . . ."
+      ". . . . . . . t4 . . . ."
+      ". . . . . . . . . . . ."
+      ". t5 . . . . . . . . . ."
+      ". . . . . . . . . . . ."
+      ". . . . . t6 . . . . . ."
+      ". . . . . . . . . . . ."
+      ". . . . . . . . t7 . . ."
+      ". . . . . . . . . . . ."
+      ". . . t8 . . . . . . . ."
+      ". . . . . . . . . . . .";
+  }
+
+  ul.links li {
+    font-size: 1.25em;
+    line-height: 2;
+  }
+}
+
+@media (orientation: landscape) {
+  ul.links {
+    padding: 1.75em 7.143vw;
+    grid-template-rows: repeat(12, 1.75em);
+    grid-template-areas:
+      ". . . . . . . t1 . . . ."
+      ". . . . . . . . . . . ."
+      ". t2 . . . . . . . . . ."
+      ". . . . . . . . . . . ."
+      ". . . . t3 . . . . . . ."
+      ". . . . . . . . t4 . . ."
+      "t5 . . . . . . . . . . ."
+      ". . . . . . . . . . . ."
+      ". . . . . . t6 . . . . ."
+      ". . . . . . . . . . . ."
+      ". . . . . . . . . . t7 ."
+      ". . . t8 . . . . . . . .";
+  }
+
+  ul.links li {
+    font-size: 1.75em;
+    line-height: 1;
+  }
+}
