@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Instagram",
+    "href": "https://www.instagram.com/hellospiral/",
+    "src": "bubbles.png",
+    "scale": 0.9,
+    "zIndex": 3
+  },
+  {
+    "name": "Bandcamp",
+    "href": "https://salaamhelicoid.bandcamp.com/",
+    "src": "volcano.png",
+    "scale": 1,
+    "zIndex": 3
+  },
+  {
+    "name": "Soundcloud",
+    "href": "https://soundcloud.com/hello-spiral",
+    "src": "lad.png",
+    "scale": 0.95,
+    "zIndex": 4
+  },
+  {
+    "name": "Mixcloud",
+    "href": "https://www.mixcloud.com/hellospiral777/",
+    "src": "collab.png",
+    "scale": 1.05,
+    "zIndex": 5
+  },
+  {
+    "name": "MemoryGlands",
+    "href": "https://memoryglands.bandcamp.com/",
+    "src": "memory-glands.png",
+    "scale": 0.95,
+    "zIndex": 7
+  },
+  {
+    "name": "Merch",
+    "href": "https://everpress.com/profile/hello-spiral",
+    "src": "man-o-man.png",
+    "scale": 0.9,
+    "zIndex": 6
+  },
+  {
+    "name": "Youtube",
+    "href": "https://www.youtube.com/channel/UCsC9A7T1b7F0WVzBFANQuAA",
+    "src": "vacant-male.png",
+    "scale": 0.95,
+    "zIndex": 4
+  },
+  {
+    "name": "Contact",
+    "href": "mailto:hellospiral777@yahoo.co.uk",
+    "src": "iamthebun.png",
+    "scale": 0.95,
+    "zIndex": 7
+  }
+]
